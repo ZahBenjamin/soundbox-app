@@ -28,7 +28,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({ soundFile }) => {
     onMouseDown={handleMouseDown}
     onMouseUp={handleMouseUp}
     onMouseLeave={handleMouseUp}
-    className={`beatbox-button ${isPressed ? 'pressed' : ''}`}
+    className={`sound-button ${isPressed ? 'pressed' : ''}`}
     >
     
     </button>

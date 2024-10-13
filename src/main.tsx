@@ -5,7 +5,27 @@ import snareSound from './assets/sounds/snare-chop_C_major.wav'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
+
   <StrictMode>
-    <SoundButton soundFile={snareSound}/>
+    <div className=''>
+      <div className='board-row'>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+      </div>
+      <div className='board-row'>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+      </div>
+      <div className='board-row'>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+        <SoundButton soundFile={snareSound}/>
+      </div>
+    </div>
   </StrictMode>,
 )

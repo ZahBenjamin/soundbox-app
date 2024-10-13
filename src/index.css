@@ -25,14 +25,24 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #333;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 button {
@@ -65,4 +75,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.sound-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 60px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px; 
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  cursor: pointer;
+  margin: 3px;
+}
+
+/* Hover effects to make the buttons interactive */
+.sound-button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+/* Active state for button press */
+.sound-button:active {
+  background-color: #388e3c;
+  transform: scale(0.95); 
 }
